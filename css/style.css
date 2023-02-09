@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(230, 230, 230);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container-principal{
+    border-radius: 50px;
+    width: 80%;
+    background-color: black;
+}
+
+.botao-calcular{
+    background-color: rgb(133, 155, 255);
+    color: rgb(0, 0, 0);
+}
+
+.tabela{
+    width: 100%;
+    margin-top: 50px;
+    table-layout: fixed;
+    
+}
+td{
+    color: rgb(133, 155, 255);
+    text-align: center;
+    border: 1px solid white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.resultado{
+    color: rgb(223, 223, 223);
+}
