@@ -2,6 +2,16 @@ function calcularValor(){
     var valorA = Number(document.getElementById('aValue').value)
     var valorB = Number(document.getElementById('bValue').value)
 
+    function fatorial(valor){
+        if (valor === 0 || valor === 1){
+            return 1
+        }
+        for (var i = valor - 1; i >= 1; i--){
+            valor *= i;
+        }
+        return valor
+    }
+    
     soma = valorA + valorB
     document.getElementById('soma').innerHTML = soma
 
@@ -35,16 +45,6 @@ function calcularValor(){
     squareRootB = Math.sqrt(valorB)
     squareRootB = squareRootB.toFixed(2)
     document.getElementById('squareRootB').innerHTML = squareRootB
-
-    function fatorial(valor){
-        if (valor === 0 || valor === 1){
-            return 1
-        }
-        for (var i = valor - 1; i >= 1; i--){
-            valor *= i;
-        }
-        return valor
-    }
 
     fatorialA = fatorial(valorA)
     document.getElementById('fatorialA').innerHTML = fatorialA
